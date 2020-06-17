@@ -77,6 +77,90 @@
 <p><span>8.啟動leo，將cd2020pj1打開，編輯路徑和名稱</span></p>
 <p><span>9.儲存並選取  drawROC，輸入 pip install authomatic</span></p>
 <p><span>10.進入倉儲cd2020pj1，輸入 python wsgi.py</span></p>
+<h4><span></span></h4>
+<h4><span color="#ff0000"><b>以ssh對github連線:</b></span></h4>
+<p><span color="#ff0000">(1)到y槽的portablegit將sh_for_solvespace檔案複製並修改成sh.exe</span></p>
+<p><span color="#ff0000"><span>(2)進入黑窗輸入sh和</span></span><span><code>ssh-keygen -t rsa -b 4096 -C "使用者學號"</code></span></p>
+<p><span face="monospace"><span>(3)下載putty連線工具箱並利用其中的putty.gen創建兩把金鑰</span></span></p>
+<p><span face="monospace"><span>(4)修改啟動器中的指令</span></span></p>
+<pre><code><span>set GIT_HOME=%Disk%:\portablegit\bin\
+set GIT_SSH=%Disk%:\putty\plink.exe</span><br/><br/><span>(5)</span>進入config中更改指令</code><code><span>url = git@github.com:mdecourse/cad2019.git</span>在mdecourse的地方要改成自己的學號</code></pre>
+<p><span face="monospace"><span>(6)開啟putty.exe進去設定github.com和proxy位置其中ssh中的auth的地方必須選取剛剛創建的金鑰</span></span></p>
+<p><span face="monospace"><span>(7)用編輯器複製課程網站中的step6指令並且儲存放入.ssh資料夾之中</span></span></p>
+<p><span face="monospace"><span>(8)進入github並且在setting中的ssh將金鑰開啟並複製放入金鑰設置處</span></span></p>
+<h4><span></span></h4>
+<h4><span></span>meeting by 40723238</h4>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/6sZEjxMWDZI" width="560"></iframe></p>
+<p></p>
+<h4>IPV4 Ubuntu 對外連線</h4>
+<h5>1.新增整體系統阜號，主機網路為NAT Network</h5>
+<h5>2.啟動，password "kmol2020"，open LXTermmial</h5>
+<h5>3.輸入ifconfig/sudo apt install net-tools，password "kmol2020"</h5>
+<h5>4.輸入ping 127.0.0.1，進入cd2020pj1/git pull</h5>
+<h5>5.sudo vi wsgi.py編輯內容，按i編輯，近端的host 改  為10.0.2.4</h5>
+<h5>6.esc ，"wq" to save，開啟cd2020pj1，.leo，在nav search "allowExt"</h5>
+<p>7.新增 ttt檔，然後在tmp下sudo vi oauth_scrum.txt</p>
+<h5>8.輸入內容，輸入python3 wsgi.py 去啟動遠端</h5>
+<h5>9.https:/127.0.0.0.1.1.8443/alogin</h5>
+<h4>week15  FileZilla文件共享設定</h4>
+<p>1.下載 <span><a href="https://portableapps.com/apps/internet/filezilla_portable">filezilla</a> </span>並解壓縮，開啟putty</p>
+<p>2.新增一個<span><span> </span>::1</span>，設定<span> </span><span>ssh 的 x11</span><span> </span>為 &gt;<span><span> </span>localhost:0.0<span>，儲存後開啟</span></span></p>
+<p><span><span>3.登入帳密為 kmol2020，登入後開啟FileZillaPortable</span></span></p>
+<p><span><span>4.開啟站台管理員 &gt; 新增一台<span><span> </span>::1 </span></span></span></p>
+<p><span><span>5.設定站台的<span>協定為SSH</span>、<span>主機為[::1]</span>、<span>連接埠為22</span>、<span>登入形式為詢問密碼</span>、<span>使用者為kmol2020</span></span></span></p>
+<p>6.<span>完成後開啟登錄即可共享文件</span></p>
+<h5> </h5>
+<h4>meeting by 40723210(Ubuntu)</h4>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/is_sLTLHV5M" width="560"></iframe></p>
+<h4>meeting by 40723210(<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">week13 問題討論</yt-formatted-string>)</h4>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/CLbEVpAV7gs" width="560"></iframe></p>
+<h4>meeting by 40723210(<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">week14 問題討論</yt-formatted-string>)</h4>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/N6jCSwv2eI0" width="560"></iframe></p><h2>week15-18</h2>
+<h1>assignment</h1>
+<h4><span>assignment1-可攜系統</span></h4>
+<p><span><span><span><span>step001-先在隨身碟底下創一個CD2020的資料夾，並在裡面創一個data</span></span></span></span></p>
+<p><span><span><span><span>step002-在數據下添加資料夾，分別有PortableGit / msys2 / python777 / wscite666 /   </span></span></span></span><span><span><span><span>tmp / home</span></span></span></span></p>
+<p><span><span><span><span><span>step003-PortableGit</span></span></span></span></span></p>
+<p><span><span>             1. </span><span><span>適用於Windows Portable的</span></span></span><a href="https://git-scm.com/download/win"><span><span>https://git-scm.com/download/win</span></span></a><span><span>下載</span></span><span><span><span>64位 </span></span></span><span><span><span>Git </span></span></span></p>
+<p><span><span><span>             2.安裝到CD2020 / data / PortableGit </span></span></span></p>
+<p><span><span><span>step004- </span></span></span><span><span><span>MSYS2</span></span></span></p>
+<p><span><span><span>            1.  </span></span><a href="https://www.msys2.org/"><span><span>https://www.msys2.org/</span></span></a><span><span>  下載msys2-x86_64-20190524.exe </span></span></span></p>
+<p><span><span><span>             2.安裝檔案到CD2020 / data / msys2</span></span></span></p>
+<p><span><span><span> step005-python777</span></span></span></p>
+<p><span><span><span>            1.  </span></span><a href="https://www.python.org/downloads/release/python-382/"><span><span>https://www.python.org/downloads/release/python-382/</span></span></a><span><span>  下載Windows </span></span></span><span><span><span>x86- 64可執行安裝程序</span></span></span></p>
+<p><span><span><span>            2. 安裝並複制檔案到CD2020 / data / python777</span></span></span></p>
+<p><span><span><span>steo006-wscite666</span></span></span></p>
+<p><span><span><span>          1.到  </span></span><a href="https://www.scintilla.org/SciTEDownload.html"><span><span>https://www.scintilla.org/SciTEDownload.html</span></span></a><span><span>  下載完整的64位下載                </span></span></span></p>
+<p><span>           2.解壓縮檔案到 CD2020/data/wscite237輯器執行的 Scite.exe </span></p>
+<p><span>           3.打開</span><span>Options 下的 Global Options File 其中的預設值 code.page=0 修改設定</span><span>為 </span><span>code.page=65001，將 load.on.activate=1 前面的井字號拿掉</span></p>
+<p>step007 - home</p>
+<p>          1.到2019fall/data/home  copy   .gitconfig paste home </p>
+<p>step008 - tcc</p>
+<p>         1.到 <a href="https://github.com/TinyCC/tinycc">https://github.com/TinyCC/tinycc</a> 接著到命令提示字元裡 git    clone <a href="https://github.com/TinyCC/tinycc.git">https://github.com/TinyCC/tinycc.git</a> tcc</p>
+<p>step009 - Jupyterlab</p>
+<p><span>         1.命令提示字元裡 pip install jupyterlab==2.0.1 自動安裝</span></p>
+<p>step010 - Fossil SCM</p>
+<p>       1.到 <a href="https://www.fossil-scm.org/home/doc/trunk/www/index.wiki">https://www.fossil-scm.org/home/doc/trunk/www/index.wiki</a>下載fossil scm</p>
+<p>        2.<span>解壓到 CD2020/data</span></p>
+<p>step011 - Flutter</p>
+<p><span><span><span><span>        1. </span></span></span></span><a href="https://github.com/flutter/flutter"><span><span><span><span>https://github.com/flutter/flutter</span></span></span></span></a><span><span><span><span>  裡</span></span></span></span><span><span><span><span><span>接著到命令提示字元里git  </span></span></span></span></span><span><span><span><span><span>clone https://github.com/flutter/flutter.git -b穩定</span></span></span></span></span></p>
+<p><span><span><span><span><span>step012-vscode</span></span></span></span></span></p>
+<p><span><span><span><span><span>       1. </span></span></span></span><a href="https://github.com/microsoft/vscode"><span><span><span><span>https://github.com/microsoft/vscode</span></span></span></span></a><span><span><span><span>  接下來到命令提示字元里git </span></span></span></span></span><span><span><span><span><span>clone https://github.com/microsoft/vscode.git vscode</span></span></span></span></span></p>
+<p><span><span><span><span>step013-tmp</span></span></span></span></p>
+<p><span><span><span><span>        1.git clone自己的倉儲</span></span></span></span></p>
+<p><span><span><span><span><span>        2.安裝pip和cmsimde所需模組</span></span></span></span></span></p>
+<p><span><span><span><span><span>step014- </span></span></span></span></span></p>
+<p><span><span><span><span><span>       1.先到  </span></span></span></span><a href="https://bootstrap.pypa.io/get-pip.py"><span><span><span><span>https://bootstrap.pypa.io/get-pip.py</span></span></span></span></a><span><span><span><span>  下載get-pip.py，並用程式碼自動</span></span></span></span></span><span><span><span><span><span>載入</span></span></span></span></span></p>
+<h6> 以下是影片</h6>
+<p><a href="https://www.youtube.com/watch?v=XbHZMnWAvQI"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/XbHZMnWAvQI" width="560"></iframe><img alt="" height="287" src="https://s40723237.github.io/cd2020/images/WgLEB8kAJe.png" width="550"/><br/></a></p>
+<h6><span>google 雲端</span></h6>
+<p>cd2020隨身系統下載</p>
+<h4>assignment 2- topic (翻譯)</h4>
+<p>我分工的部分是 : Design Collaboration Better Products</p>
+<p>link : <a href="https://drive.google.com/file/d/1YHQwYduSMisiJQS-Jr_HhJghzIqP_SBc/view">https://drive.google.com/file/d/1YHQwYduSMisiJQS-  Jr_HhJghzIqP_SBc/view</a></p>
+<p>翻譯部分:<a href="https://github.com/s40723234/cd2020/tree/master/downloads/assignment2">https://github.com/s40723234/cd2020/tree/master/downloads/assignment2</a></p>
+<p><a href="https://drive.google.com/drive/folders/1s1QXRshHjpgnLKZeQhqlgytk1qDL7aG4?usp=sharing">https://drive.google.com/drive/folders/1s1QXRshHjpgnLKZeQhqlgytk1qDL7aG4?usp=sharing</a></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/a69tNWKmC64" width="560"></iframe></p>
 <h4><span>assignment 03</span></h4>
 <p><span>因為本組是採輪流開會制。這次是我開</span></p>
 <p>工作分配:</p>
@@ -98,7 +182,7 @@
 <p>Mechatronic project</p>
 <p>40723210</p>
 <p>影片連結 :<a href="https://www.youtube.com/watch?v=GmKxlNPx-gs">https://www.youtube.com/watch?v=GmKxlNPx-gs</a></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/GmKxlNPx-gs" width="560"></iframe></p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="//www.youtube.com/embed/GmKxlNPx-gs" width="560"></iframe></p>
 <h4><span>assignment 我負責翻譯的部分</span></h4>
 <p><span><img alt="" height="750" src="/images/未命名.png" width="471"/></span></p>
 <p><span>2.1機電一體化<br/>讓我們研究一下自動駕駛汽車的設計，該自動駕駛汽車可用於在建築物的樓層中導航，並從同一樓層的不同辦公室移動。實現該自動駕駛汽車的設計有兩種主要方法。第一種設計方法遵循經典設計方法。在這種方法中，首先要進行機械設計。在獲得令人滿意的機械設計之後，就設計了電子系統。在最後階段，設計了控制系統。<br/>第二種設計方法是在設計AC的同時要注意每個系統對整體設計的影響。通過這種方法，在設計自動駕駛汽車的機械，電子和控制系統時，要同時考慮每個系統的設計及其對其他兩個系統的影響。<br/>因此，只有在研究了這種設計對電子設計以及控制系統設計的影響之後，才能最終確定機械系統。在這種方法中，每個系統都要考慮三個系統（機械，電子和控制）之間的相互作用以及它們對最終設計和性能的影響。<br/>每個系統的設計步驟。第二種設計方法的好處非常明顯。主要優點之一是可以對每個系統進行最佳設計，從而實現最佳整體性能。在經典設計方法中這是不可能的，因為一旦設計了機械系統，<br/>這將是最終的機械設計。同樣，一旦確定了機械設計（例如所用的材料，設計的尺寸），它將決定並可能限制電子系統中的可用替代方案（所用電動機的尺寸，電動機的位置等）。 ）設計，這反過來也將限制整個系統所使用的儀表和控制系統的替代方案。機電一體化為更好的設計提供了三個系統（機械，電子和控制）的設計之間的相互作用。</span></p>
@@ -145,91 +229,7 @@
 <p><span color="#ff0000"><b><img caption="false" height="135" src="/images/14.png" width="199"/></b></span></p>
 <p><span color="#ff0000"><b><img alt="" height="802" src="/images/16.png" width="515"/></b></span></p>
 <p><span color="#ff0000"><b><img caption="false" height="588" src="/images/17.png" width="532"/></b></span></p>
-<p><span color="#ff0000"><b><img alt="" height="696" src="/images/18.png" width="497"/></b></span></p>
-<h4><span color="#ff0000"><b>以ssh對github連線:</b></span></h4>
-<p><span color="#ff0000">(1)到y槽的portablegit將sh_for_solvespace檔案複製並修改成sh.exe</span></p>
-<p><span color="#ff0000"><span>(2)進入黑窗輸入sh和</span></span><span><code>ssh-keygen -t rsa -b 4096 -C "使用者學號"</code></span></p>
-<p><span face="monospace"><span>(3)下載putty連線工具箱並利用其中的putty.gen創建兩把金鑰</span></span></p>
-<p><span face="monospace"><span>(4)修改啟動器中的指令</span></span></p>
-<pre><code><span>set GIT_HOME=%Disk%:\portablegit\bin\
-set GIT_SSH=%Disk%:\putty\plink.exe</span><br/><br/><span>(5)</span>進入config中更改指令</code><code><span>url = git@github.com:mdecourse/cad2019.git</span>在mdecourse的地方要改成自己的學號</code></pre>
-<p><span face="monospace"><span>(6)開啟putty.exe進去設定github.com和proxy位置其中ssh中的auth的地方必須選取剛剛創建的金鑰</span></span></p>
-<p><span face="monospace"><span>(7)用編輯器複製課程網站中的step6指令並且儲存放入.ssh資料夾之中</span></span></p>
-<p><span face="monospace"><span>(8)進入github並且在setting中的ssh將金鑰開啟並複製放入金鑰設置處</span></span></p>
-<h4><span></span></h4>
-<h4><span></span>meeting by 40723238</h4>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/6sZEjxMWDZI" width="560"></iframe></p>
-<p></p>
-<h4>IPV4 Ubuntu 對外連線</h4>
-<h5>1.新增整體系統阜號，主機網路為NAT Network</h5>
-<h5>2.啟動，password "kmol2020"，open LXTermmial</h5>
-<h5>3.輸入ifconfig/sudo apt install net-tools，password "kmol2020"</h5>
-<h5>4.輸入ping 127.0.0.1，進入cd2020pj1/git pull</h5>
-<h5>5.sudo vi wsgi.py編輯內容，按i編輯，近端的host 改  為10.0.2.4</h5>
-<h5>6.esc ，"wq" to save，開啟cd2020pj1，.leo，在nav search "allowExt"</h5>
-<p>7.新增 ttt檔，然後在tmp下sudo vi oauth_scrum.txt</p>
-<h5>8.輸入內容，輸入python3 wsgi.py 去啟動遠端</h5>
-<h5>9.https:/127.0.0.0.1.1.8443/alogin</h5>
-<h4>week15  FileZilla文件共享設定</h4>
-<p>1.下載 <span><a href="https://portableapps.com/apps/internet/filezilla_portable">filezilla</a> </span>並解壓縮，開啟putty</p>
-<p>2.新增一個<span><span> </span>::1</span>，設定<span> </span><span>ssh 的 x11</span><span> </span>為 &gt;<span><span> </span>localhost:0.0<span>，儲存後開啟</span></span></p>
-<p><span><span>3.登入帳密為 kmol2020，登入後開啟FileZillaPortable</span></span></p>
-<p><span><span>4.開啟站台管理員 &gt; 新增一台<span><span> </span>::1 </span></span></span></p>
-<p><span><span>5.設定站台的<span>協定為SSH</span>、<span>主機為[::1]</span>、<span>連接埠為22</span>、<span>登入形式為詢問密碼</span>、<span>使用者為kmol2020</span></span></span></p>
-<p>6.<span>完成後開啟登錄即可共享文件</span></p>
-<h5> </h5>
-<h4>meeting by 40723210(Ubuntu)</h4>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/is_sLTLHV5M" width="560"></iframe></p>
-<h4>meeting by 40723210(<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">week13 問題討論</yt-formatted-string>)</h4>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/CLbEVpAV7gs" width="560"></iframe></p>
-<h4>meeting by 40723210(<yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">week14 問題討論</yt-formatted-string>)</h4>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/N6jCSwv2eI0" width="560"></iframe></p>
-<h2>week15-18</h2>
-<h1>assignment</h1>
-<h4><span>assignment1-可攜系統</span></h4>
-<p><span><span><span><span>step001-先在隨身碟底下創一個CD2020的資料夾，並在裡面創一個data</span></span></span></span></p>
-<p><span><span><span><span>step002-在數據下添加資料夾，分別有PortableGit / msys2 / python777 / wscite666 /   </span></span></span></span><span><span><span><span>tmp / home</span></span></span></span></p>
-<p><span><span><span><span><span>step003-PortableGit</span></span></span></span></span></p>
-<p><span><span>             1. </span><span><span>適用於Windows Portable的</span></span></span><a href="https://git-scm.com/download/win"><span><span>https://git-scm.com/download/win</span></span></a><span><span>下載</span></span><span><span><span>64位 </span></span></span><span><span><span>Git </span></span></span></p>
-<p><span><span><span>             2.安裝到CD2020 / data / PortableGit </span></span></span></p>
-<p><span><span><span>step004- </span></span></span><span><span><span>MSYS2</span></span></span></p>
-<p><span><span><span>            1.  </span></span><a href="https://www.msys2.org/"><span><span>https://www.msys2.org/</span></span></a><span><span>  下載msys2-x86_64-20190524.exe </span></span></span></p>
-<p><span><span><span>             2.安裝檔案到CD2020 / data / msys2</span></span></span></p>
-<p><span><span><span> step005-python777</span></span></span></p>
-<p><span><span><span>            1.  </span></span><a href="https://www.python.org/downloads/release/python-382/"><span><span>https://www.python.org/downloads/release/python-382/</span></span></a><span><span>  下載Windows </span></span></span><span><span><span>x86- 64可執行安裝程序</span></span></span></p>
-<p><span><span><span>            2. 安裝並複制檔案到CD2020 / data / python777</span></span></span></p>
-<p><span><span><span>steo006-wscite666</span></span></span></p>
-<p><span><span><span>          1.到  </span></span><a href="https://www.scintilla.org/SciTEDownload.html"><span><span>https://www.scintilla.org/SciTEDownload.html</span></span></a><span><span>  下載完整的64位下載                </span></span></span></p>
-<p><span>           2.解壓縮檔案到 CD2020/data/wscite237輯器執行的 Scite.exe </span></p>
-<p><span>           3.打開</span><span>Options 下的 Global Options File 其中的預設值 code.page=0 修改設定</span><span>為 </span><span>code.page=65001，將 load.on.activate=1 前面的井字號拿掉</span></p>
-<p>step007 - home</p>
-<p>          1.到2019fall/data/home  copy   .gitconfig paste home </p>
-<p>step008 - tcc</p>
-<p>         1.到 <a href="https://github.com/TinyCC/tinycc">https://github.com/TinyCC/tinycc</a> 接著到命令提示字元裡 git    clone <a href="https://github.com/TinyCC/tinycc.git">https://github.com/TinyCC/tinycc.git</a> tcc</p>
-<p>step009 - Jupyterlab</p>
-<p><span>         1.命令提示字元裡 pip install jupyterlab==2.0.1 自動安裝</span></p>
-<p>step010 - Fossil SCM</p>
-<p>       1.到 <a href="https://www.fossil-scm.org/home/doc/trunk/www/index.wiki">https://www.fossil-scm.org/home/doc/trunk/www/index.wiki</a>下載fossil scm</p>
-<p>        2.<span>解壓到 CD2020/data</span></p>
-<p>step011 - Flutter</p>
-<p><span><span><span><span>        1. </span></span></span></span><a href="https://github.com/flutter/flutter"><span><span><span><span>https://github.com/flutter/flutter</span></span></span></span></a><span><span><span><span>  裡</span></span></span></span><span><span><span><span><span>接著到命令提示字元里git  </span></span></span></span></span><span><span><span><span><span>clone https://github.com/flutter/flutter.git -b穩定</span></span></span></span></span></p>
-<p><span><span><span><span><span>step012-vscode</span></span></span></span></span></p>
-<p><span><span><span><span><span>       1. </span></span></span></span><a href="https://github.com/microsoft/vscode"><span><span><span><span>https://github.com/microsoft/vscode</span></span></span></span></a><span><span><span><span>  接下來到命令提示字元里git </span></span></span></span></span><span><span><span><span><span>clone https://github.com/microsoft/vscode.git vscode</span></span></span></span></span></p>
-<p><span><span><span><span>step013-tmp</span></span></span></span></p>
-<p><span><span><span><span>        1.git clone自己的倉儲</span></span></span></span></p>
-<p><span><span><span><span><span>        2.安裝pip和cmsimde所需模組</span></span></span></span></span></p>
-<p><span><span><span><span><span>step014- </span></span></span></span></span></p>
-<p><span><span><span><span><span>       1.先到  </span></span></span></span><a href="https://bootstrap.pypa.io/get-pip.py"><span><span><span><span>https://bootstrap.pypa.io/get-pip.py</span></span></span></span></a><span><span><span><span>  下載get-pip.py，並用程式碼自動</span></span></span></span></span><span><span><span><span><span>載入</span></span></span></span></span></p>
-<h6> 以下是影片</h6>
-<p><a href="https://www.youtube.com/watch?v=XbHZMnWAvQI"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/XbHZMnWAvQI" width="560"></iframe><img alt="" height="287" src="https://s40723237.github.io/cd2020/images/WgLEB8kAJe.png" width="550"/><br/></a></p>
-<h6><span>google 雲端</span></h6>
-<p>cd2020隨身系統下載</p>
-<h4>assignment 2- topic (翻譯)</h4>
-<p>我分工的部分是 : Design Collaboration Better Products</p>
-<p>link : <a href="https://drive.google.com/file/d/1YHQwYduSMisiJQS-Jr_HhJghzIqP_SBc/view">https://drive.google.com/file/d/1YHQwYduSMisiJQS-  Jr_HhJghzIqP_SBc/view</a></p>
-<p>翻譯部分:<a href="https://github.com/s40723234/cd2020/tree/master/downloads/assignment2">https://github.com/s40723234/cd2020/tree/master/downloads/assignment2</a></p>
-<p><a href="https://drive.google.com/drive/folders/1s1QXRshHjpgnLKZeQhqlgytk1qDL7aG4?usp=sharing">https://drive.google.com/drive/folders/1s1QXRshHjpgnLKZeQhqlgytk1qDL7aG4?usp=sharing</a></p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/a69tNWKmC64" width="560"></iframe></p><h1>Develop</h1>
+<p><span color="#ff0000"><b><img alt="" height="696" src="/images/18.png" width="497"/></b></span></p><h1>Develop</h1>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>

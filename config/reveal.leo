@@ -391,7 +391,7 @@ vertical: body pane on the botton</t>
 
 * week10 -google api 設定 / 以ssh對github連線
 * week11  vrep虛擬主機設置
-* week12  assidnment3
+* week12  assigment 3
 * week13  IPV4 Ubuntu對外連線設定
 * week14  IPV6 Ubuntu對外連線設定(要用學校電腦)
 

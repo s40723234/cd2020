@@ -23,6 +23,10 @@
 </v>
 <v t="leo.20200623214422.1"><vh>40723234 期末報告</vh>
 <v t="leo.20200623214422.2"><vh>封面投影片內容</vh></v>
+<v t="leo.20200623221000.1"><vh>week01-05</vh></v>
+<v t="leo.20200623221003.1"><vh>week06-09</vh></v>
+<v t="leo.20200623221011.1"><vh>week10-14</vh></v>
+<v t="leo.20200623220949.1"><vh>week15-16</vh></v>
 </v>
 <v t="leo.20180902120523.11"><vh>快捷鍵</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
@@ -373,6 +377,54 @@ Created by [s40723234](https://s40723234.github.io/cd2020/content/index.html)
 # week15
 
 * week15 FileZilla文件共享設定
+&lt;/t&gt;
+&lt;/tnodes&gt;
+&lt;/leo_file&gt;
+
+</t>
+<t tx="leo.20200623220949.1">## week15
+
+* week15 FileZilla文件共享設定
+* week16-IPV6 Ubuntu對外連線設定
+&lt;/t&gt;
+&lt;/tnodes&gt;
+&lt;/leo_file&gt;
+
+</t>
+<t tx="leo.20200623221000.1">## week01-05
+
+* week01-建倉儲
+* week01-更新python 3.8.2
+* week2-分組
+* assignment1-可攜系統
+* week04-自主跟進度
+* week05-個人進度簡報
+
+&lt;/t&gt;
+&lt;/tnodes&gt;
+&lt;/leo_file&gt;
+
+</t>
+<t tx="leo.20200623221003.1">## week06-09
+
+* week06-OBS與Youtube 直播串流
+* week07-Youtobe串流OBS直播 (線上課程)
+* week08-vrep
+* week04-期中考 (線上課程)
+
+&lt;/t&gt;
+&lt;/tnodes&gt;
+&lt;/leo_file&gt;
+
+</t>
+<t tx="leo.20200623221011.1"># week10-14
+
+* week10 -google api 設定 / 以ssh對github連線
+* week11  vrep虛擬主機設置
+* week12  assidnment3
+* week13  IPV4 Ubuntu對外連線設定
+* week14  IPV6 Ubuntu對外連線設定(要用學校電腦)
+
 &lt;/t&gt;
 &lt;/tnodes&gt;
 &lt;/leo_file&gt;
